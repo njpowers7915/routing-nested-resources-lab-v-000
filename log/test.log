@@ -4755,3 +4755,6 @@ Processing by SongsController#index as HTML
   Parameters: {"artist_id"=>"abc"}
   [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE (abc) LIMIT 1
   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mArtist Load (0.4ms)[0m  SELECT  "artists".* FROM "artists" WHERE (abc) LIMIT 1
+Completed 500 Internal Server Error in 41740ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
