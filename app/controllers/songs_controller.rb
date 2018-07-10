@@ -15,7 +15,7 @@ class SongsController < ApplicationController
     if Song.find_by_id(params[:id])
         @song = Song.find(params[:id])
     else
-        flash[:alert] = "You have successfully logged out."
+        flash[:alert] = "Song does not exist"
         redirect_to artist_songs_path
     end
   end
